@@ -1,0 +1,43 @@
+.about {
+  max-width: var(--max-width);
+  padding: 4em 1em;
+  margin: 0 auto;
+}
+
+.about h2 {
+  margin-bottom: 1em;
+}
+
+.about figure {
+  display: flex;
+  width: 100%;
+  max-height: 320px;
+}
+
+.about figure img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+@media (min-width: 37.5em) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about > div {
+    text-align: center;
+    width: 49%;
+    margin: auto 0;
+  }
+
+  .about figure {
+    width: 49%;
+    max-height: none;
+    margin: auto 0;
+  }
+}
+
+@media (min-width: 50em) {
+}

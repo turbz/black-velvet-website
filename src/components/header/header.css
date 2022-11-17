@@ -1,0 +1,180 @@
+.main-header .wrapper {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3em 1.4em;
+  background-color: #fff;
+}
+
+.main-header .site-branding {
+  display: flex;
+  width: 100%;
+}
+
+.main-header h1 {
+  width: 240px;
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin: auto;
+}
+
+.main-header .toggle-icon {
+  position: absolute;
+  right: 1em;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.main-header .toggle-icon span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.main-header .toggle-icon span:nth-child(1) {
+  transform: translateY(-10px);
+  /* width: 20px; */
+  /* left: 15px; */
+}
+
+.main-header .toggle-icon span:nth-child(2) {
+  transform: translateY(10px);
+  /* width: 15px; */
+  /* left: 15px; */
+}
+
+.main-header nav.active .toggle-icon {
+  position: fixed;
+}
+
+.main-header nav.active .toggle-icon span:nth-child(3) {
+  transform: translateX(60px);
+}
+
+.main-header nav.active .toggle-icon span:nth-child(1) {
+  transform: translateY(0px) rotate(45deg);
+  transition-delay: 0.125s;
+}
+
+.main-header nav.active .toggle-icon span:nth-child(2) {
+  transform: translateY(0px) rotate(315deg);
+  transition-delay: 0.25s;
+}
+
+.main-header .toggle-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: 1px;
+}
+
+.main-header .navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 5em 0;
+  background-color: #fff;
+}
+
+.main-header nav.active .navigation {
+  display: inline-block;
+}
+
+.main-header .main-nav {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+.main-header .main-nav li {
+  display: flex;
+  justify-content: center;
+}
+
+.main-header .main-nav a {
+  font-size: 1.25em;
+  width: 100%;
+  padding: 1em;
+}
+
+.main-header .social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.main-header .social-media a {
+  margin-left: 0.5em;
+}
+
+@media (min-width: 37.5em) {
+  .main-header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  .main-header .wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 980px;
+    height: 160px;
+    margin: 0 auto;
+    padding: 2em 1em;
+    z-index: 1;
+  }
+  .main-header h1 {
+    font-size: 1rem;
+  }
+
+  .main-header .toggle-icon {
+    display: none !important;
+  }
+
+  .main-header nav {
+    width: 100%;
+  }
+
+  .main-header .navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 1.4em;
+    padding: 1.4em 0;
+    background-color: transparent;
+    border-top: 1px solid #000;
+  }
+
+  .main-header .main-nav {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .main-header .main-nav a {
+    font-size: 0.825rem;
+    padding: 0;
+    margin-left: 0.5em;
+  }
+
+  .main-header .social-media {
+    position: absolute;
+    right: 1em;
+  }
+}

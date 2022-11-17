@@ -1,0 +1,49 @@
+.main-banner .banner-content {
+  color: white;
+  padding: 2em 1em;
+  background-color: rgb(var(--blackv-primary-color));
+}
+
+.main-banner .banner-content h4 {
+  font-size: var(--h4);
+  font-weight: normal;
+  margin-top: 1.4em;
+}
+
+@media (min-width: 37.5em) {
+  .main-banner {
+    position: relative;
+    display: flex;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    height: 720px;
+    padding-top: 160px;
+    overflow: hidden;
+  }
+  .main-banner .banner-content {
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--blackv-primary-color), 0.3);
+  }
+
+  .main-banner .banner-content h2 {
+    color: #fff;
+    font-size: 72px;
+  }
+
+  .main-banner figure {
+    width: 100%;
+  }
+
+  .main-banner figure img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 64em) {
+}

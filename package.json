@@ -1,20 +1,26 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "black-velvet",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^5.0.0",
+    "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.0.0",
     "gatsby-plugin-manifest": "^5.0.0",
     "gatsby-plugin-sharp": "^5.0.0",
     "gatsby-source-filesystem": "^5.0.0",
+    "gatsby-transformer-remark": "^6.0.0",
     "gatsby-transformer-sharp": "^5.0.0",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.6.0"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1"
   },
   "keywords": [
@@ -28,7 +34,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",

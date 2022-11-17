@@ -1,0 +1,97 @@
+.Partners {
+  margin: 2em 0;
+}
+
+.Partners > hgroup {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.Partners > hgroup h5 {
+  margin-top: 1em;
+}
+
+.Partners .cardlist {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 1em;
+  --columns: 8;
+}
+
+.Partners .cardlist .card {
+  text-align: center;
+  --width: 8;
+  --initialBasis: calc(var(--width, 0) / var(--columns, 8) * 100%);
+  --gap: calc((var(--columns, 8) - var(--width, 0)) * 1%);
+  flex-basis: calc(var(--initialBasis) - var(--gap));
+  margin-bottom: 1em;
+  background-color: #f7f7f7;
+  padding: 2em;
+}
+
+.Partners .cardlist .card figure {
+  display: flex;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.Partners .cardlist .card figure img {
+  margin: auto;
+}
+
+.Partners .cardlist .card > div {
+  text-align: center;
+  padding: 1em;
+}
+
+.Partners .card hgroup {
+  margin-top: 2em;
+}
+
+.Partners .card h3 {
+  font-size: var(--h4);
+  font-weight: normal;
+  color: rgb(var(--blackv-secondary-color));
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.Partners .card hgroup h4 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin: 1em 0;
+  padding-bottom: 1em;
+  line-height: 1.25;
+}
+
+.Partners .card button {
+  font-size: 1rem;
+  margin-top: 1em;
+  padding: 0.6em 1.5em;
+  border: none;
+}
+
+@media (min-width: 37.5em) {
+  .Partners {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  .Partners .cardlist .card {
+    position: relative;
+    --width: 3;
+    margin-bottom: 2em;
+  }
+
+  .Partners .cardlist .card > div {
+    height: 200px;
+  }
+
+  .Partners .card button {
+    position: absolute;
+    bottom: 1em;
+  }
+}

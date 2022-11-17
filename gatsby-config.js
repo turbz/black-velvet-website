@@ -9,11 +9,12 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Black Velvel Civils`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+  pathPrefix: "/black-velvet-website",
   plugins: [
     `gatsby-plugin-image`,
     {
@@ -21,6 +22,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/markdown`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -39,5 +47,22 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-omni-font-loader",
+      options: {
+        enableListener: true,
+        preconnect: [
+          `https://fonts.googleapis.com`,
+          `https://fonts.gstatic.com`,
+        ],
+        web: [
+          {
+            name: "Questrial",
+            file: "https://fonts.googleapis.com/css2?family=Questrial&display=swap",
+          },
+        ],
+      },
+    },
+    "gatsby-transformer-remark",
   ],
 }

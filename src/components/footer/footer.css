@@ -1,0 +1,122 @@
+.App-footer {
+  color: #fff;
+  background-color: rgb(var(--blackv-primary-color));
+  padding: 2em 1em 0;
+}
+
+.App-footer div {
+  margin-bottom: 3em;
+}
+
+.App-footer div p {
+  color: #8a8a8a;
+  line-height: 1.7rem;
+}
+
+.App-footer div:first-of-type ul {
+  display: flex;
+  height: auto;
+  margin: 2em 0;
+}
+
+.App-footer div:first-of-type ul li {
+  width: auto;
+}
+
+.App-footer div:first-of-type ul li a {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  margin-right: 0.8em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  line-height: normal;
+}
+
+.App-footer div:first-of-type ul li svg {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.App-footer div h4 {
+  margin-bottom: 2.4em;
+}
+
+.App-footer div ul {
+  height: 140px;
+}
+
+.App-footer div ul li {
+  width: 100%;
+}
+
+.App-footer div ul li a {
+  display: flex;
+  color: #8a8a8a;
+  margin-bottom: 1em;
+  line-height: 1.3rem;
+}
+
+.App-footer div ul li a svg {
+  width: 14px;
+  height: 14px;
+  margin: auto 0;
+  margin-right: 0.3em;
+}
+
+.App-footer div:last-of-type ul li {
+  width: 100%;
+  line-height: 1.4rem;
+}
+
+.App-footer > p {
+  background-color: #68d1cb;
+  height: 60px;
+  margin-top: 5em;
+  padding: 1em;
+}
+
+@media (min-width: 30em) {
+  .App-footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5em 3em 0;
+  }
+
+  .App-footer div {
+    width: 48%;
+  }
+
+  .App-footer > p {
+    position: relative;
+    width: 50%;
+    height: 90px;
+    margin-left: -3em;
+  }
+
+  .App-footer > p::before {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    content: "";
+    width: 100px;
+    height: 100%;
+    background: #68d1cb;
+    -webkit-transform: matrix(1, 0, 0.9, 1, 150, 0);
+    -ms-transform: matrix(1, 0, 0.9, 1, 150, 0);
+    transform: matrix(1, 0, 0.9, 1, 150, 0);
+  }
+}
+
+@media (min-width: 50em) {
+  .App-footer {
+    max-width: 1920px;
+  }
+  .App-footer div {
+    width: 24.5%;
+    padding: 4em 2em 0;
+  }
+}
