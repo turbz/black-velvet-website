@@ -71,7 +71,7 @@
 }
 
 .App-footer > p {
-  background-color: #68d1cb;
+  background-color: rgb(var(--blackv-secondary-color));
   height: 60px;
   margin-top: 5em;
   padding: 1em;
