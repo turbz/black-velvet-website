@@ -14,7 +14,7 @@ module.exports = {
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
-  pathPrefix: "/black-velvet-website",
+  pathPrefix: "/black-velvet-website/",
   plugins: [
     `gatsby-plugin-image`,
     {
