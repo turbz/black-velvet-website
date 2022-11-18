@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/taevoco1/public_html/
+    - export DEPLOYPATH=/home/taevoco1/black-velvet-webiste/
     - /bin/cp -R public/* $DEPLOYPATH
