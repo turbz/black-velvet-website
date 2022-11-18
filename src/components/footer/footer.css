@@ -95,6 +95,7 @@
     width: 50%;
     height: 90px;
     margin-left: -3em;
+    padding: 1.5em 3em;
   }
 
   .App-footer > p::before {
@@ -104,7 +105,7 @@
     content: "";
     width: 100px;
     height: 100%;
-    background: #68d1cb;
+    background: rgb(var(--blackv-secondary-color));
     -webkit-transform: matrix(1, 0, 0.9, 1, 150, 0);
     -ms-transform: matrix(1, 0, 0.9, 1, 150, 0);
     transform: matrix(1, 0, 0.9, 1, 150, 0);
