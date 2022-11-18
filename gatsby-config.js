@@ -13,7 +13,7 @@ module.exports = {
     title: `Black Velvel Civils`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://turbz.github.io/black-velvet-website/`,
+    siteUrl: `https://turbz.github.io/black-velvet-website`,
   },
   plugins: [
     `gatsby-plugin-image`,
