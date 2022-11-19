@@ -6,13 +6,13 @@
 .Services .cardlist {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   margin: 0 1em;
   --columns: 6;
 }
 
 .Services .cardlist .card {
-  --width: 6;
+  --width: 3;
   --initialBasis: calc(var(--width, 0) / var(--columns, 6) * 100%);
   --gap: calc((var(--columns, 6) - var(--width, 0)) * 1.33%);
   flex-basis: calc(var(--initialBasis) - var(--gap));
@@ -64,7 +64,6 @@
   .Services .cardlist .card {
     position: relative;
     --width: 3;
-    max-width: 320px;
     margin-bottom: 2em;
   }
 
@@ -72,8 +71,18 @@
     height: 260px;
   }
 
+  .Services .cardlist .card figure {
+    height: 290px;
+  }
+
   .Services .card button {
     position: absolute;
     bottom: 1em;
+  }
+}
+
+@media (min-width: 50em) {
+  .Services .cardlist .card {
+    --width: 2.2;
   }
 }

@@ -160,7 +160,9 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <p>Copyright © {moment().format("YYYY")} All rights reserved</p>
+      <div className="copyright">
+        <p>Copyright © {moment().format("YYYY")} All rights reserved</p>
+      </div>
     </footer>
   )
 }

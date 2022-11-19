@@ -1,10 +1,18 @@
 .App-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
   color: #fff;
   background-color: rgb(var(--blackv-primary-color));
   padding: 2em 1em 0;
+  --column: 4;
 }
 
 .App-footer div {
+  --width: 4;
+  --initialBasis: calc(var(--width, 0) / var(--columns, 4) * 100%);
+  --gap: calc((var(--columns, 4) - var(--width, 0)) * 1.33%);
+  flex-basis: calc(var(--initialBasis) - var(--gap));
   margin-bottom: 3em;
 }
 
@@ -43,10 +51,6 @@
   margin-bottom: 2.4em;
 }
 
-.App-footer div ul {
-  height: 140px;
-}
-
 .App-footer div ul li {
   width: 100%;
 }
@@ -70,6 +74,10 @@
   line-height: 1.4rem;
 }
 
+.App-footer > div.copyright {
+  width: 100% !important;
+}
+
 .App-footer > p {
   background-color: rgb(var(--blackv-secondary-color));
   height: 60px;
@@ -77,17 +85,19 @@
   padding: 1em;
 }
 
-@media (min-width: 30em) {
+@media (min-width: 37.5em) {
   .App-footer {
     position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 5em 3em 0;
+    --columns: 4;
   }
 
   .App-footer div {
-    width: 48%;
+    --width: 1;
+    min-width: 280px;
   }
 
   .App-footer > p {

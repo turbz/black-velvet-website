@@ -53,7 +53,7 @@ export default function Contacts() {
       <div className="earth3dmap-com">
         <iframe
           id="iframemap"
-          src="https://maps.google.com/maps?q=Wedgefield+Office+Park%2C+The+Regus+Building%2C+17+Muswell+Road+South%2C+Bryanston%2C+2021&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          src="https://maps.google.com/maps?q=Wedgefield%20Office%20Park,%20The%20Regus%20Building,%2017%20Muswell%20Road%20South,%20Bryanston,%202021&t=&z=18&ie=UTF8&iwloc=&output=embed"
           width="100%"
           height="500"
           frameBorder="0"

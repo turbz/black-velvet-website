@@ -17,7 +17,6 @@
     max-width: var(--max-width);
     margin: 0 auto;
     height: 720px;
-    padding-top: 160px;
     overflow: hidden;
   }
   .main-banner .banner-content {
@@ -45,5 +44,8 @@
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 50em) {
+  .main-banner {
+    padding-top: 160px;
+  }
 }
