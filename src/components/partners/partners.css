@@ -78,7 +78,7 @@
 @media (min-width: 37.5em) {
   .Partners {
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: 4em auto;
   }
   .Partners .cardlist .card {
     position: relative;

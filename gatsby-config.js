@@ -64,5 +64,6 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
+    "google-map-react",
   ],
 }

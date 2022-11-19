@@ -1,0 +1,88 @@
+.Blog {
+  background-color: #f7f7f7;
+  padding-bottom: 2em;
+}
+
+.Blog .blog-cover {
+  color: #fff;
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 330px;
+  background-image: url(https://static.wixstatic.com/media/11062b_da48578d0f7041df82d0ba0ee3a1f7f2~mv2.jpeg/v1/fill/w_1066,h_480,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_da48578d0f7041df82d0ba0ee3a1f7f2~mv2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 2em;
+}
+
+.Blog .blog-cover div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--blackv-primary-color), 0.3);
+}
+
+.Blog .blog-cover h2 {
+  margin: auto;
+}
+
+.Blog .blog-cover p {
+  margin: auto;
+}
+
+.Blog .card {
+  margin: 1em;
+  background-color: #fff;
+}
+
+.Blog .card hgroup {
+  padding: 1em;
+}
+
+.Blog .card h3 {
+  font-weight: normal;
+  color: rgb(var(--blackv-secondary-color));
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+.Blog figure {
+  width: 100%;
+  height: 320px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 37.5em) {
+  .Blog .blog-cover {
+    height: 480px;
+  }
+
+  .Blog .cardlist {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .Blog .card {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse wrap;
+  }
+
+  .Blog .card div {
+    width: 48%;
+    margin: auto 0;
+  }
+
+  .Blog figure {
+    width: 48%;
+  }
+}

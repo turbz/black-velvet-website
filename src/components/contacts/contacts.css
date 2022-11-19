@@ -1,0 +1,87 @@
+.Contacts > figure {
+  height: 220px;
+  background-image: url(https://static.wixstatic.com/media/0589ca_b4edb3d63333484c98156bdd5a732914~mv2.jpg/v1/fill/w_640,h_440,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/0589ca_b4edb3d63333484c98156bdd5a732914~mv2.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.Contacts .address {
+  text-align: center;
+  margin: 1em var(--blackv--custom--spacing--outer);
+}
+
+.Contacts .address h4 {
+  color: rgb(var(--blackv-primary-color), 0.5);
+  margin-top: 1em;
+  line-height: 1.5;
+}
+
+.Contacts form {
+  margin: 2em var(--blackv--custom--spacing--outer);
+}
+
+.Contacts form label {
+  font-size: 1.1175rem;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 1em;
+}
+
+.Contacts form label mark {
+  color: tomato;
+  background-color: transparent;
+}
+
+.Contacts form label input,
+.Contacts form label textarea {
+  padding: 1em 0;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.Contacts form ::placeholder {
+  font-size: 1rem;
+}
+
+.Contacts form label input:focus,
+.Contacts form label textarea:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(var(--blackv-secondary-color));
+}
+
+.Contacts form label textarea {
+  height: 140px;
+  appearance: none;
+  --webkit-appearance: none;
+}
+
+@media (min-width: 37.5em) {
+  .Contacts .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 2em var(--blackv--custom--spacing--outer);
+  }
+
+  .Contacts .address {
+    width: 48%;
+    margin: 0;
+  }
+
+  .Contacts form {
+    width: 48%;
+    margin: 0;
+  }
+
+  .Contacts > figure {
+    height: 480px;
+  }
+}
+
+@media (min-width: 64em) {
+  .Contacts .wrapper {
+    max-width: var(--max-width);
+    margin: 2em auto;
+  }
+}

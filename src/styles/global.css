@@ -6,8 +6,8 @@
   --blackv-quaternary-color: #373435;
   --blackv-quinary-color: #373435;
 
-  --wp--custom--spacing--small: max(1.25rem, 6vw);
-  --wp--custom--spacing--outer: var(--wp--custom--spacing--small, 0.75rem);
+  --blackv--custom--spacing--small: max(1.25rem, 6vw);
+  --blackv--custom--spacing--outer: var(--wp--custom--spacing--small, 0.75rem);
   /* Heaing */
 }
 
@@ -23,7 +23,7 @@
   --h3-resize: max(calc(var(--h5) - 0.5rem), 3vw);
   --h2-resize: max(var(--h5), 5vw);
 
-  --max-width: 1080px;
+  --max-width: 1180px;
 }
 
 main h2 {
