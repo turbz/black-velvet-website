@@ -12,7 +12,7 @@
 }
 
 .Services .cardlist .card {
-  --width: 3;
+  --width: 6;
   --initialBasis: calc(var(--width, 0) / var(--columns, 6) * 100%);
   --gap: calc((var(--columns, 6) - var(--width, 0)) * 1.33%);
   flex-basis: calc(var(--initialBasis) - var(--gap));

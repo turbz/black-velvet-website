@@ -18,14 +18,19 @@ const Header = () => {
         <div className="site-branding">
           <h1>Black Velvet Civils (Pty) Ltd</h1>
         </div>
-        <nav className={`${toggle && "active"}`}>
+        <nav className={`${!toggle ? "inactive" : "active"}`}>
           <div onClick={() => setToggle(!toggle)} className="toggle-icon">
             {/* {!toggle ? <FaBars /> : <FaCross />} */}
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <div className="navigation">
+          <div
+            style={{
+              display: !toggle ? "none" : "inline-block",
+            }}
+            className="navigation"
+          >
             <ul className="main-nav">
               <li>
                 <a onClick={() => setToggle(!toggle)} href="#">

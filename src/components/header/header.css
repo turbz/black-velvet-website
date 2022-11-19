@@ -63,12 +63,12 @@
 
 .main-header nav.active .toggle-icon span:nth-child(1) {
   transform: translateY(0px) rotate(45deg);
-  transition-delay: 0.125s;
+  /* transition-delay: 0.125s; */
 }
 
 .main-header nav.active .toggle-icon span:nth-child(2) {
   transform: translateY(0px) rotate(315deg);
-  transition-delay: 0.25s;
+  /* transition-delay: 0.25s; */
 }
 
 .main-header .toggle-icon svg {
@@ -88,9 +88,9 @@
   background-color: #fff;
 }
 
-.main-header nav.active .navigation {
+/* .main-header nav.active .navigation {
   display: inline-block;
-}
+} */
 
 .main-header .main-nav {
   display: flex;
@@ -153,7 +153,7 @@
 
   .main-header .navigation {
     position: relative;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     width: 100%;
     height: auto;
