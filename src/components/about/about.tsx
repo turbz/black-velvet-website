@@ -1,7 +1,7 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 
-import "./about.css"
+import "./about.css";
 
 export default function About() {
   const data = useStaticQuery(graphql`
@@ -24,9 +24,9 @@ export default function About() {
         }
       }
     }
-  `)
+  `);
 
-  const { frontmatter, html } = data.allMarkdownRemark.edges[0].node
+  const { frontmatter, html } = data.allMarkdownRemark.edges[0].node;
 
   return (
     <section className="about">
@@ -38,5 +38,5 @@ export default function About() {
         <img src={frontmatter.image} alt="green-image" />
       </figure>
     </section>
-  )
+  );
 }
