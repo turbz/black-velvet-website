@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 import {
   FaBars,
   FaCross,
@@ -6,12 +6,12 @@ import {
   FaInstagram,
   FaLinkedin,
   FaTwitter,
-} from "react-icons/fa"
-import "./header.css"
-import { Link } from "gatsby"
+} from "react-icons/fa";
+import "./header.css";
+import { Link } from "gatsby";
 
 const Header = () => {
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
   return (
     <header className="main-header">
       <div className="wrapper">
@@ -33,29 +33,29 @@ const Header = () => {
           >
             <ul className="main-nav">
               <li>
-                <a onClick={() => setToggle(!toggle)} href="#">
+                <Link onClick={() => setToggle(!toggle)} to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a onClick={() => setToggle(!toggle)} href="#">
+                <Link onClick={() => setToggle(!toggle)} to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a onClick={() => setToggle(!toggle)} href="#">
+                <Link onClick={() => setToggle(!toggle)} to="/services">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a onClick={() => setToggle(!toggle)} href="#">
+                <Link onClick={() => setToggle(!toggle)} to="/clients">
                   Clients
-                </a>
+                </Link>
               </li>
               <li>
-                <a onClick={() => setToggle(!toggle)} href="#">
+                <Link onClick={() => setToggle(!toggle)} to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
                 <a onClick={() => setToggle(!toggle)} href="#">
@@ -70,9 +70,12 @@ const Header = () => {
             </ul>
             <ul className="social-media">
               <li>
-                <Link to="#">
+                <a
+                  href="https://www.instagram.com/blackvelvet_pty/"
+                  target="_blank"
+                >
                   <FaInstagram />
-                </Link>
+                </a>
               </li>
               <li>
                 <Link to="#">
@@ -89,17 +92,12 @@ const Header = () => {
                   <FaLinkedin />
                 </Link>
               </li>
-              <li>
-                <Link to="#">
-                  <FaInstagram />
-                </Link>
-              </li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

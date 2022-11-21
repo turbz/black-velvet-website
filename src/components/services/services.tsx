@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import "./services.css"
+import "./services.css";
 
 export default function Services() {
   const services = [
@@ -55,18 +55,20 @@ export default function Services() {
       time: "30 min",
       link: "/indoor-environmental-assessment",
     },
-  ]
+  ];
   return (
     <section className="Services">
       <h2>Services</h2>
       <div className="cardlist">
-        {services.map(d => (
+        {services.map((d) => (
           <div className="card">
             <figure
               style={{
                 backgroundImage: `url(${d.image})`,
               }}
-            ></figure>
+            >
+              <div></div>
+            </figure>
             <div>
               <hgroup>
                 <h3>{d.title}</h3>
@@ -80,5 +82,5 @@ export default function Services() {
         ))}
       </div>
     </section>
-  )
+  );
 }

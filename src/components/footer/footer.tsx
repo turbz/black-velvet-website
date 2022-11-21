@@ -1,15 +1,15 @@
-import React from "react"
+import React from "react";
 
-import "./footer.css"
+import "./footer.css";
 import {
   FaAngleRight,
   FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
-} from "react-icons/fa"
-import { Link } from "gatsby"
-import moment from "moment"
+} from "react-icons/fa";
+import { Link } from "gatsby";
+import moment from "moment";
 
 export default function Footer() {
   return (
@@ -23,9 +23,12 @@ export default function Footer() {
         </p>
         <ul className="social-media">
           <li>
-            <Link to="#">
+            <a
+              href="https://www.instagram.com/blackvelvet_pty/"
+              target="_blank"
+            >
               <FaInstagram />
-            </Link>
+            </a>
           </li>
           <li>
             <Link to="#">
@@ -40,11 +43,6 @@ export default function Footer() {
           <li>
             <Link to="#">
               <FaLinkedin />
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <FaInstagram />
             </Link>
           </li>
         </ul>
@@ -164,5 +162,5 @@ export default function Footer() {
         <p>Copyright © {moment().format("YYYY")} All rights reserved</p>
       </div>
     </footer>
-  )
+  );
 }

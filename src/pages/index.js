@@ -11,12 +11,14 @@ import Services from "../components/services/services";
 
 const IndexPage = () => (
   <Layout>
-    <Banner />
-    <About />
-    <Services />
-    <Partners />
-    <Blog />
-    <Contacts />
+    <main className="Home-Page">
+      <Banner />
+      <About />
+      <Services />
+      <Partners />
+      <Blog />
+      <Contacts />
+    </main>
   </Layout>
 );
 

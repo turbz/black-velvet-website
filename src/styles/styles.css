@@ -1,0 +1,16 @@
+@media (min-width: 50em) {
+  main {
+    padding-top: 180px;
+    padding-bottom: 2em;
+    background-color: #f7f7f7;
+  }
+
+  main.Home-Page {
+    background-color: #fff;
+    padding-bottom: 0;
+  }
+
+  main .Contacts {
+    padding-bottom: 0;
+  }
+}

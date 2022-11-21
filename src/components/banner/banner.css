@@ -46,6 +46,6 @@
 
 @media (min-width: 50em) {
   .main-banner {
-    padding-top: 160px;
+    height: 600px;
   }
 }

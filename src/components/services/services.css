@@ -21,10 +21,23 @@
 }
 
 .Services .cardlist .card figure {
+  display: flex;
+  position: relative;
   height: 180px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.Services .cardlist .card figure div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--blackv-primary-color), 0);
+  transition: ease-in 0.5s;
+}
+
+.Services .cardlist .card:hover figure div {
+  background-color: rgba(var(--blackv-primary-color), 0.25);
 }
 
 .Services .cardlist .card > div {
@@ -53,6 +66,13 @@
   margin-top: 1em;
   padding: 0.6em 1.5em;
   border: none;
+  background-color: #fff;
+  transition: ease 0.5s;
+}
+
+.Services .card:hover button {
+  color: #fff;
+  background-color: rgb(var(--blackv-secondary-color));
 }
 
 @media (min-width: 37.5em) {

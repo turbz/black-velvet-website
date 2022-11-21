@@ -122,6 +122,7 @@
   .main-header {
     width: 100%;
     position: fixed;
+    top: 0;
     left: 0;
     display: flex;
     justify-content: center;
@@ -172,6 +173,11 @@
     font-size: 1rem;
     padding: 0;
     margin-left: 0.5em;
+    transition: ease-in 0.5s;
+  }
+
+  .main-header .main-nav a:hover {
+    color: rgb(var(--blackv-secondary-color));
   }
 
   .main-header .social-media {

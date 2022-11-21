@@ -5,20 +5,20 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
-import * as React from "react"
+import * as React from "react";
 
-import Header from "./header/header"
-import "./layout.css"
-import Footer from "./Footer/Footer"
+import Header from "./header/header";
+import "./layout.css";
+import Footer from "./Footer/Footer";
 
 const Layout = ({ children }) => {
   return (
     <div className="layout">
       <Header />
-      <main>{children}</main>
+      <>{children}</>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

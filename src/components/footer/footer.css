@@ -75,13 +75,15 @@
 }
 
 .App-footer > div.copyright {
-  width: 100% !important;
+  --width: 4;
+  margin: 0;
 }
 
-.App-footer > p {
+.App-footer .copyright p {
+  color: #fff;
   background-color: rgb(var(--blackv-secondary-color));
   height: 60px;
-  margin-top: 5em;
+  margin-top: 2em;
   padding: 1em;
 }
 
@@ -100,7 +102,7 @@
     min-width: 280px;
   }
 
-  .App-footer > p {
+  .App-footer .copyright p {
     position: relative;
     width: 50%;
     height: 90px;
@@ -108,7 +110,7 @@
     padding: 1.5em 3em;
   }
 
-  .App-footer > p::before {
+  .App-footer .copyright p::before {
     position: absolute;
     top: 0;
     right: 100px;
