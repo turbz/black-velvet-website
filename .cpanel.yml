@@ -2,4 +2,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/taevoco1/public_html/
     - /bin/cp -R public/* $DEPLOYPATH
-    - /bin/rsync -av --exclude='.git/' --exlude='.gitignore*' --exlude='.cpanel.yml*' $SRCPATH $DEPLOYPATH
+    # - /bin/rsync -av --exclude='.git/' --exlude='.gitignore*' --exlude='.cpanel.yml*' $SRCPATH $DEPLOYPATH
