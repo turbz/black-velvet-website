@@ -1,9 +1,9 @@
-import React from "react"
-import "./blog.css"
+import React from "react";
+import "./blog.css";
 
 export default function Blog() {
   return (
-    <section className="Blog">
+    <section id="blog" className="Blog">
       <div className="blog-cover">
         <div>
           <hgroup>
@@ -34,5 +34,5 @@ export default function Blog() {
         </div>
       </div>
     </section>
-  )
+  );
 }

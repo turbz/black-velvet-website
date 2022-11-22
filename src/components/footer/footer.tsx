@@ -13,7 +13,7 @@ import moment from "moment";
 
 export default function Footer() {
   return (
-    <footer className="App-footer">
+    <footer id="footer" className="App-footer">
       <div>
         <h4>About</h4>
         <p>

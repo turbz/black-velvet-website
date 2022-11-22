@@ -1,10 +1,10 @@
-import * as React from "react"
+import * as React from "react";
 
-import "./banner.css"
+import "./banner.css";
 
 export default function Banner() {
   return (
-    <section className="main-banner">
+    <section id="home" className="main-banner">
       <div className="banner-content">
         <h2>Black Velvet Civils</h2>
         <h4>Environmental Consultancy</h4>
@@ -16,5 +16,5 @@ export default function Banner() {
         />
       </figure>
     </section>
-  )
+  );
 }

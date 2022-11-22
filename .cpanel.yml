@@ -1,4 +1,5 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/taevoco1/blackvelvet.taevo.co.za/
+    - export DEPLOYPATH=/home/taevoco1/public_html/
     - /bin/cp -R public/* $DEPLOYPATH
+    - /bin/rsync -av --exclude='.git/' --exlude='.gitignore*' --exlude='.cpanel.yml*' $SRCPATH $DEPLOYPATH

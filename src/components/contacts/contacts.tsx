@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 
-import "./contacts.css"
+import "./contacts.css";
 
 export default function Contacts() {
   return (
-    <section className="Contacts">
+    <section id="contacts" className="Contacts">
       <div className="wrapper">
         <div className="address">
           <h2>Contact Us</h2>
@@ -77,5 +77,5 @@ export default function Contacts() {
         </div> */}
       </div>
     </section>
-  )
+  );
 }

@@ -29,7 +29,7 @@ export default function About() {
   const { frontmatter, html } = data.allMarkdownRemark.edges[0].node;
 
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="content">
         <h2>{frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: html }}></div>

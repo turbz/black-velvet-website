@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import "./partners.css"
+import "./partners.css";
 
 export default function Partners() {
   const services = [
@@ -39,16 +39,16 @@ export default function Partners() {
         "https://static.wixstatic.com/media/0589ca_cfd45bdb80ac4aac8c89d60f6e796e5f~mv2.png/v1/fill/w_220,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Growthpoint.png",
       link: "/growthpoint-properties",
     },
-  ]
+  ];
 
   return (
-    <section className="Partners">
+    <section id="partners" className="Partners">
       <hgroup>
         <h2>Value Partners</h2>
         <h5>Partnerships and Projects</h5>
       </hgroup>
       <div className="cardlist">
-        {services.map(d => (
+        {services.map((d) => (
           <div className="card">
             <figure>
               <img src={d.image} alt={d.title} />
@@ -63,5 +63,5 @@ export default function Partners() {
         ))}
       </div>
     </section>
-  )
+  );
 }
